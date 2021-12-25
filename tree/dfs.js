@@ -23,24 +23,4 @@ const dfs = (root) => {
     }
 }
 
-const root = {
-    val: "A",
-    left: {
-        val: "B",
-        left: {
-            val: "D"
-        },
-        right: {
-            val: "E"
-        }
-    },
-    right: {
-        val: "C",
-        right: {
-            val: "F"
-        }
-    }
-
-}
-
-dfs(bt) // A,B,D,E,C,F 
+dfs(bt) // 1,2,4,5,3,6,7

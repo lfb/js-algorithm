@@ -7,6 +7,8 @@
  * 4. 重复 2,3 步骤，直到队列为空
  */
 
+const bt = require("./bt")
+
 const bfs = (root) => {
     // 1. 新建一个队列，把根节点入队
     const queue = [root]
@@ -28,23 +30,4 @@ const bfs = (root) => {
 }
 
 
-const root = {
-    val: "A",
-    left: {
-        val: "B",
-        left: {
-            val: "D"
-        },
-        right: {
-            val: "E"
-        }
-    },
-    right: {
-        val: "C",
-        right: {
-            val: "F"
-        }
-    }
-}
-
-bfs(root) // A,B,C,D,E,F
+bfs(bt) // 1,2,3,4,5,6,7
