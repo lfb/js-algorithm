@@ -4,6 +4,8 @@
  * 2. 对根节点的孩子们进行深度优先遍历
  */
 
+const bt = require('./bt')
+
 const dfs = (root) => {
     if (!root) {
         return false
@@ -38,5 +40,7 @@ const root = {
             val: "F"
         }
     }
+
 }
-dfs(root) // A,B,D,E,C,F 
+
+dfs(bt) // A,B,D,E,C,F 
